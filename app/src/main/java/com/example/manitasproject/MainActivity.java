@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
     //Se realiza comentario de pruebas ATT. Anrodriguez138
+        // Se realiza comentario prueba numero 2- Danielmora
     }
 
 }
