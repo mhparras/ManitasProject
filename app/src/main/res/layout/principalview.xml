@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444751"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_title"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:background="#0f0f0f"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+
+        <Button
+            android:id="@+id/btn_singlePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingHorizontal="40dp"
+            android:text="Aprendizaje"
+            android:textColor="@color/colorCyan"
+            android:onClick="goSingleGame"
+            />
+
+        <Button
+            android:id="@+id/btn_multiPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+
+            android:paddingHorizontal="30dp"
+            android:text="Juegos"
+            android:textColor="@color/colorOrange"
+            android:onClick="goMultiplayerGame"
+            />
+
+        <Button
+            android:id="@+id/btn_verificatorGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingHorizontal="30dp"
+            android:text="Opciones"
+            android:textColor="@color/colorPurple"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
