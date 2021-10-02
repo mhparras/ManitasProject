@@ -44,7 +44,7 @@
             android:id="@+id/btn_singlePlayer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/custom_button_aprendizaje"
             android:paddingHorizontal="40dp"
             android:text="Aprendizaje"
             android:textColor="@color/colorCyan"
@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
-
+            android:background="@drawable/custom_button_validatejuegos"
             android:paddingHorizontal="30dp"
             android:text="Juegos"
             android:textColor="@color/colorOrange"

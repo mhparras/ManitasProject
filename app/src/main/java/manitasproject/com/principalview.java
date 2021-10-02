@@ -2,7 +2,12 @@ package manitasproject.com;
 
 import android.os.Bundle;
 
-public class principalview {
+import androidx.appcompat.app.AppCompatActivity;
 
+public class principalview extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 }
