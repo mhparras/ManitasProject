@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "493310327392",
+    "project_id": "manitas-501db",
+    "storage_bucket": "manitas-501db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493310327392:android:8209e13e94c56060902105",
+        "android_client_info": {
+          "package_name": "manitasproject.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493310327392-ettft8hg9nk88q9jl9mnitknhe88rpmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAI6LJH1elJyJa43PXyoZXnE2DfikNLecM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493310327392-ettft8hg9nk88q9jl9mnitknhe88rpmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
