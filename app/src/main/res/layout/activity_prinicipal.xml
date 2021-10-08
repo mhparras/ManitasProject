@@ -48,7 +48,7 @@
             android:paddingHorizontal="40dp"
             android:text="@string/btn_aprendizaje"
             android:textColor="#00838F"
-            android:onClick="goToLearning"
+            android:onClick="options"
             />
 
         <Button
@@ -57,11 +57,11 @@
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:background="@drawable/btn_games_principal"
+            android:clickable="true"
+            android:onClick="options"
             android:paddingHorizontal="30dp"
             android:text="@string/btn_juegos"
-            android:textColor="@color/colorOrange"
-            android:onClick="goToGames"
-            />
+            android:textColor="@color/colorOrange" />
 
         <Button
             android:id="@+id/btn_options"
@@ -71,7 +71,7 @@
             android:paddingHorizontal="30dp"
             android:text="@string/btn_options"
             android:textColor="@color/colorPurple"
-            android:onClick="goToOptions"
+            android:onClick="options"
             />
 
     </LinearLayout>
