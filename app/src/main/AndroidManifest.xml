@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".OptionsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GamesActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LearnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
