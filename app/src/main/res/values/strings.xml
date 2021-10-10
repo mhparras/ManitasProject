@@ -4,4 +4,12 @@
     <string name="btn_aprendizaje">Aprendizaje</string>
     <string name="btn_juegos">Juegos</string>
     <string name="btn_options">Opciones</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="conf_contraseña">Confirmar Contraseña</string>
+    <string name="edad">Edad</string>
+    <string name="telefono">Teléfono</string>
+    <string name="sexo">Sexo</string>
 </resources>

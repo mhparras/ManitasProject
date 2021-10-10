@@ -3,25 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/btn_games_principal.xml" value="0.15833333333333333" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/btn_options_principal.xml" value="0.15833333333333333" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.15833333333333333" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.15833333333333333" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/custom_btn_games_principalactivity.xml" value="0.15833333333333333" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/custom_button_aprendizaje.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/custom_button_validateJuegos.xml" value="0.10729166666666666" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/custom_button_validatejuegos.xml" value="0.11927083333333334" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_games.xml" value="0.1421875" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_learn.xml" value="0.12447916666666667" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_learning.xml" value="0.11458333333333333" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_main.xml" value="0.1272644927536232" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_menu.xml" value="0.12447916666666667" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_options.xml" value="0.1421875" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/activity_prinicipal.xml" value="0.17708333333333334" />
-        <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/layout/principalview.xml" value="0.2" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/btn_learning_principal.xml" value="0.3828125" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.3828125" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.3828125" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_games.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_learn.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_learning.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_options.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_prinicipal.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/principalview.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Michael/test/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.2890625" />
         <entry key="..\:/Users/Michael/test/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.2890625" />
         <entry key="..\:/Users/Michael/test/ManitasProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
