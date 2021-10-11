@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="opciones_sexo">
-        <item>Seleccione</item>
+        <item></item>
         <item>Masculino</item>
         <item>Femenino</item>
         <item>No Responde</item>

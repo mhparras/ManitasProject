@@ -58,7 +58,7 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/txt_Edad"
+        android:id="@+id/txt_edad"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -94,7 +94,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_registrarse"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_rounded"

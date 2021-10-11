@@ -9,15 +9,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bnt_registro;
+    Button btn_registro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bnt_registro=(Button)findViewById(R.id.btn_registrarse);
+        btn_registro=(Button)findViewById(R.id.btn_registrarse);
 
-        bnt_registro.setOnClickListener(new View.OnClickListener() {
+        btn_registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
