@@ -29,49 +29,61 @@
         android:id="@+id/txt_nombre"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary"
         android:ems="10"
-        android:hint="@string/nombre"
-        android:inputType="textPersonName" />
+        android:hint="@string/nombre_ape"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/txt_correo"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary"
         android:ems="10"
         android:hint="@string/correo"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/txt_contrasena"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary"
         android:ems="10"
         android:hint="@string/contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/txt_confContrasena"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary"
         android:ems="10"
         android:hint="@string/conf_contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/txt_edad"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary"
         android:ems="10"
         android:hint="@string/edad"
-        android:inputType="number" />
+        android:inputType="number"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/txt_telefono"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_secondary"
         android:ems="10"
         android:hint="@string/telefono"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:minHeight="48dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -85,12 +97,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/sexo"
-            android:textSize="18sp" />
+            android:textSize="18dp" />
 
         <Spinner
             android:id="@+id/spinnerSexo"
             android:layout_width="145dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/design_default_color_secondary" />
     </LinearLayout>
 
     <Button

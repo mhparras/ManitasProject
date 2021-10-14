@@ -4,8 +4,16 @@
     <string name="btn_aprendizaje">Aprendizaje</string>
     <string name="btn_juegos">Juegos</string>
     <string name="btn_options">Opciones</string>
+
+    //Inicio de sesión
     <string name="registrarse">Registrarse</string>
-    <string name="nombre">Nombre</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="recordame">Recordarme</string>
+    <string name="olvidarContra">Olvidé mi contraseña</string>
+    <string name="version">Versión 1.0</string>
+
+    //Registro
+    <string name="nombre_ape">Nombre y Apellido</string>
     <string name="correo">Correo</string>
     <string name="contraseña">Contraseña</string>
     <string name="conf_contraseña">Confirmar Contraseña</string>
