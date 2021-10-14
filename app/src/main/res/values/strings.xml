@@ -14,8 +14,8 @@
 
     //Registro
     <string name="nombre_ape">Nombre y Apellido</string>
-    <string name="correo">Correo</string>
-    <string name="contraseña">Contraseña</string>
+    <string name="correo"> Correo</string>
+    <string name="contraseña"> Contraseña</string>
     <string name="conf_contraseña">Confirmar Contraseña</string>
     <string name="edad">Edad</string>
     <string name="telefono">Teléfono</string>
