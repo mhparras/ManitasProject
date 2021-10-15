@@ -104,30 +104,49 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         String edad1 = edad.getText().toString().trim();
         String telefono1 = telefono.getText().toString().trim();
         String sexo1 = spinner_sex.getSelectedItem().toString().trim();
-        if(TextUtils.isEmpty(nombre1))
+        boolean registroValido = true;
+        if(TextUtils.isEmpty(nombre1)) {
             nombre.setError("Campo requerido");
-        if(TextUtils.isEmpty(correo1))
+            registroValido = false;
+        }
+        if(TextUtils.isEmpty(correo1)){
             correo.setError("Campo requerido");
-        if(TextUtils.isEmpty(contrasena1))
+            registroValido = false;
+        }
+        if(TextUtils.isEmpty(contrasena1)) {
             contrasena.setError("Campo requerido");
-        if(TextUtils.isEmpty(confContrasena1))
-            contrasena.setError("Campo requerido");
-        if(TextUtils.equals(contrasena1, confContrasena1) == false)
-            confContrasena.setError("Las contraseñas no coinciden");
-        if(TextUtils.isEmpty(edad1))
+            registroValido = false;
+        }
+        if(TextUtils.isEmpty(confContrasena1)) {
+            confContrasena.setError("Campo requerido");
+            registroValido = false;
+        }
+        if(TextUtils.equals(contrasena1, confContrasena1) == false) {
+            registroValido = false;
+            throw new Exception("Las contraseñas no coinciden.");
+        }
+        if(TextUtils.isEmpty(edad1)) {
             edad.setError("Campo requerido");
-        if(TextUtils.isEmpty(telefono1))
+            registroValido = false;
+        }
+        if(TextUtils.isEmpty(telefono1)) {
             telefono.setError("Campo requerido");
-        if(sexo1.equals("") || TextUtils.isEmpty(sexo1))
-            throw new Exception("Debe seleccionar el sexo");
+            registroValido = false;
+        }
+        if(sexo1.equals("") || TextUtils.isEmpty(sexo1)) {
+            registroValido = false;
+            throw new Exception("Debe seleccionar el sexo.");
+        }
 
-        persona.setUid(UUID.randomUUID().toString());
-        persona.setNombre(nombre1);
-        persona.setCorreo(correo1);
-        persona.setContrasena(contrasena1);
-        persona.setEdad(edad1);
-        persona.setTelefono(telefono1);
-        persona.setSexo(sexo1);
+        if(registroValido) {
+            persona.setUid(UUID.randomUUID().toString());
+            persona.setNombre(nombre1);
+            persona.setCorreo(correo1);
+            persona.setContrasena(contrasena1);
+            persona.setEdad(edad1);
+            persona.setTelefono(telefono1);
+            persona.setSexo(sexo1);
+        }
 
         return persona;
     }
@@ -147,9 +166,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                     String id = String.valueOf(snapshot.getChildrenCount()+1);
                     String idUser = "";
                     for(long count = id.length(); count < 6; count++){
-                        idUser = idUser+"0";
+                        idUser = idUser + "0";
                     }
-                    idUser = idUser+id;
+                    idUser = idUser + id;
                 }
                 registerNow(persona);
             }
