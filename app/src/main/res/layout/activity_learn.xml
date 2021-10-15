@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LearnActivity"
-    android:background="#dbdcd3"
+    android:background="@color/white"
     android:padding="20dp"
     >
     <LinearLayout
@@ -17,16 +17,15 @@
         android:layout_marginBottom="20dp"
         android:gravity="center">
 
-        <TextView
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_title"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/log"
+            android:background="@drawable/custom_image_logo"
+            android:contentDescription="@string/txt_title">
 
-            />
+        </ImageView>
 
     </LinearLayout>
 
@@ -34,14 +33,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp"
-        android:background="#ffff"
+        android:padding="5dp"
+        android:background="@drawable/custom_activity_menu"
         >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Números"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -49,6 +50,8 @@
             android:layout_height="wrap_content"
             android:text="Colores"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -56,6 +59,8 @@
             android:layout_height="wrap_content"
             android:text="Animales"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -63,6 +68,8 @@
             android:layout_height="wrap_content"
             android:text="Vocales"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -70,6 +77,8 @@
             android:layout_height="wrap_content"
             android:text="Abecedario"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -77,6 +86,8 @@
             android:layout_height="wrap_content"
             android:text="Días de la Semana"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -84,6 +95,8 @@
             android:layout_height="wrap_content"
             android:text="meses del año"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -91,6 +104,8 @@
             android:layout_height="wrap_content"
             android:text="Saludos"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -98,6 +113,8 @@
             android:layout_height="wrap_content"
             android:text="básico"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -105,6 +122,8 @@
             android:layout_height="wrap_content"
             android:text="verbos"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
         <Button
@@ -112,6 +131,8 @@
             android:layout_height="wrap_content"
             android:text="operaciones con numeros"
             android:textAlignment="center"
+            android:background="@drawable/btn_layout_options"
+            android:layout_margin="2dp"
             >
         </Button>
 

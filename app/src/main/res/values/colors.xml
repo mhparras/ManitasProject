@@ -14,4 +14,10 @@
     <color name="colorCyan">#0a6d81</color>
     <color name="colorOrange">#e2aa2f</color>
     <color name="colorGreen">#70b92e</color>
+    //paleta de colores
+    <color name="colorA">#70D1FF</color>
+    <color name="colorB">#76D0D6</color>
+    <color name="colorC">#7FEBD6</color>
+    <color name="colorD">#78D6AA</color>
+    <color name="colorE">#82F59F</color>
 </resources>
