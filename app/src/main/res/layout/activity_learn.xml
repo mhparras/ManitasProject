@@ -4,157 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".LearnActivity"
     android:background="@color/white"
+    android:orientation="vertical"
     android:padding="20dp"
-    >
+    tools:context=".LearnActivity">
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/log"
             android:background="@drawable/custom_image_logo"
-            android:contentDescription="@string/txt_title">
+            android:contentDescription="@string/txt_title"
+            app:srcCompat="@drawable/log">
 
         </ImageView>
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="5dp"
-        android:background="@drawable/custom_activity_menu"
-        >
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Números"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Colores"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Animales"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vocales"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Abecedario"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Días de la Semana"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="meses del año"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Saludos"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="básico"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="verbos"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="operaciones con numeros"
-            android:textAlignment="center"
-            android:background="@drawable/btn_layout_options"
-            android:layout_margin="2dp"
-            >
-        </Button>
+        android:layout_height="wrap_content">
 
-    </LinearLayout>
-    <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_activity_menu"
+            android:orientation="vertical"
+            android:padding="5dp">
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/numeros"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/colores"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/animales"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/vocales"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/abecedario"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/dias"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/meses"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/saludos"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/basico"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/verbos"
+                android:textAlignment="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/btn_layout_options"
+                android:text="@string/operaciones"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center">
+        android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="volver"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:background="@color/colorPurple"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/volver"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

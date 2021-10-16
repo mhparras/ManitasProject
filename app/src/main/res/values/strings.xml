@@ -21,4 +21,19 @@
     <string name="telefono">Teléfono</string>
     <string name="sexo">Sexo</string>
 
+    //layout aprendizaje
+    <string name="numeros">Números</string>
+    <string name="colores">Colores</string>
+    <string name="animales">Animales</string>
+    <string name="vocales">Vocales</string>
+    <string name="abecedario">Abecedario</string>
+    <string name="dias">Días de la Semana</string>
+    <string name="meses">Meses del Año</string>
+    <string name="saludos">Saludos</string>
+    <string name="basico">Básico</string>
+    <string name="verbos">Verbos</string>
+    <string name="operaciones">Operaciones Matemáticas</string>
+    <string name="volver">Volver</string>
+
+
 </resources>
