@@ -35,5 +35,12 @@
     <string name="operaciones">Operaciones Matemáticas</string>
     <string name="volver">Volver</string>
 
+    //layout opciones
+    <string name="cambiarcontrasena">Cambiar Contraseña</string>
+    <string name="contrasenaactual">Contraseña Actual</string>
+    <string name="contrasenanueva">Contraseña Nueva</string>
+    <string name="confcontrasenanueva">Confirmar Contraseña Nueva</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
 
 </resources>
