@@ -33,7 +33,8 @@ import manitasproject.com.model.Persona;
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText nombre, contrasena, confContrasena, edad, telefono, correo;
-    private Button btnLogin;
+    private Button btnRegistro;
+    private Button btnCancelar;
     Spinner spinner_sex;
 
     private FirebaseAuth firebaseAuth;
@@ -59,8 +60,16 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         spinner_sex.setAdapter(adapter);
 
-        btnLogin = (Button) findViewById(R.id.btn_registrarse);
-        btnLogin.setOnClickListener(this);
+        btnRegistro = (Button) findViewById(R.id.btn_registrarse);
+        btnCancelar = (Button) findViewById(R.id.btn_cancelar);
+        btnRegistro.setOnClickListener(this);
+
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     //Iniciamos los servicios y la conexión de Firebase

@@ -14,10 +14,8 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="320dp"
-        android:layout_height="166dp"
-        app:srcCompat="@drawable/log"
-
-        />
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/log" />
 
     <TextView
         android:id="@+id/textView4"
@@ -26,6 +24,7 @@
         android:text="@string/registrarse"
         android:textAlignment="center"
         android:textSize="24sp"
+        android:layout_marginTop="5dp"
         />
 
     <EditText
@@ -115,6 +114,15 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_rounded"
         android:padding="10dp"
-        android:text="@string/registrarse" />
+        android:text="@string/registrarse"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/btn_cancelar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded_border"
+        android:padding="10dp"
+        android:text="@string/cancelar"
+        android:layout_marginTop="8dp" />
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package manitasproject.com;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,10 +9,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-public class OptionsActivity extends AppCompatActivity {
+public class OptionsActivity extends AppCompatActivity implements View.OnClickListener{
+
+    private String idUsuario;
 
     private TextView nombreUsuario;
     private EditText correoUsuario;
@@ -34,20 +43,72 @@ public class OptionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
 
+        //Conexión con Firebase
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        Bundle miBundle = this.getIntent().getExtras();
+
         nombreUsuario = (TextView) findViewById(R.id.textNombreUsuario);
         correoUsuario = (EditText) findViewById(R.id.textCorreo);
         edadUsuario = (EditText) findViewById(R.id.textEdad);
         telefonoUsuario = (EditText) findViewById(R.id.textTelefono);
         sexoUsuario = (EditText) findViewById(R.id.textSexo);
+        contrasenaActual = (EditText) findViewById(R.id.textContrasenaActual);
+        contrasenaNueva = (EditText) findViewById(R.id.textContrasenaNueva);
+        confContrasenaNueva = (EditText) findViewById(R.id.textConfContrasenaNueva);
 
         btnGuardar = (Button) findViewById(R.id.btn_guardar);
         btnCancelar = (Button) findViewById(R.id.btn_cancelar);
 
+        traerDatos(miBundle.getString("uid"));
+
+        /**if(miBundle != null){
+            String nombre = miBundle.getString("uid");
+            nombreUsuario.setText(nombre);
+        }**/
+
+        btnGuardar.setOnClickListener(this);
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(OptionsActivity.this, MenuActivity.class);
-                startActivity(i);
+                finish();
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
+    private void traerDatos(String id){
+        //final String[] respuesta = {"","","",""};
+        //Instancia a la base de datos
+        FirebaseDatabase fdb = FirebaseDatabase.getInstance();
+        //apuntamos al nodo que queremos leer
+        DatabaseReference myRef = fdb.getReference("Usuario");
+
+        myRef.addListenerForSingleValueEvent(new ValueEventListener(){
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    for(DataSnapshot data: snapshot.getChildren()){
+                        if(data.child("uid").getValue().equals(id)){
+                            nombreUsuario.setText((String) data.child("nombre").getValue());
+                            correoUsuario.setText((String) data.child("correo").getValue());
+                            edadUsuario.setText((String) data.child("edad").getValue());
+                            telefonoUsuario.setText((String) data.child("telefono").getValue());
+                            sexoUsuario.setText((String) data.child("sexo").getValue());
+                            break;
+                        }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                System.out.println("Fallo la lectura: " + error.getCode());
             }
         });
     }

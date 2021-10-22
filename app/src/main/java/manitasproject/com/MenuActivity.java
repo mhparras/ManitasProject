@@ -36,6 +36,10 @@ public class MenuActivity extends AppCompatActivity {
             case R.id.btn_options:
                 //code
                 intent=new Intent(MenuActivity.this, OptionsActivity.class);
+                Bundle miBundle = this.getIntent().getExtras();
+
+                //Enviamos el elemento a la siguiente actividad
+                intent.putExtras(miBundle);
                 break;
         }
         startActivity(intent);
