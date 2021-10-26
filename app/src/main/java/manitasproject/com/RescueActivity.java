@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,7 +18,7 @@ public class RescueActivity extends AppCompatActivity {
 
     private EditText textCorreo;
     private Button btnResetContrasena;
-    private Button btnCancelar;
+    private Button btnVolver;
 
     private String correo;
 
@@ -37,8 +36,8 @@ public class RescueActivity extends AppCompatActivity {
 
         textCorreo = (EditText) findViewById(R.id.txt_correo);
 
-        btnResetContrasena = (Button) findViewById(R.id.btn_Restablecer);
-        btnCancelar = (Button) findViewById(R.id.btn_cancelar);
+        btnResetContrasena = (Button) findViewById(R.id.btn_restablecer);
+        btnVolver = (Button) findViewById(R.id.btn_volver);
 
         btnResetContrasena.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,12 +52,12 @@ public class RescueActivity extends AppCompatActivity {
                     resetConstrasena();
                 } else {
                     textCorreo.setError("Campo requerido");
-                    Toast.makeText(RescueActivity.this, "Ingresa el correo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RescueActivity.this, "Ingrese el correo", Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
-        btnCancelar.setOnClickListener(new View.OnClickListener() {
+        btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
@@ -72,12 +71,11 @@ public class RescueActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful())
-                    Toast.makeText(RescueActivity.this, "Se te ha enviado un correo para restablecer contraseña", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RescueActivity.this, "Se le ha enviado un correo para restablecer contraseña", Toast.LENGTH_LONG).show();
                 else
-                    Toast.makeText(RescueActivity.this, "No se pudo enviar el correo de recuperación.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RescueActivity.this, "No se pudo enviar el correo de recuperación.", Toast.LENGTH_LONG).show();
 
                 pgDialog.dismiss();
-                finish();
             }
         });
     }
