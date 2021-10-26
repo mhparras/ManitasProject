@@ -4,12 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,7 +22,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.database.core.Context;
 
 import manitasproject.com.model.CredencialPersona;
 
@@ -32,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnRegistro;
     private EditText textCorreo;
     private EditText textContrasena;
+
+    private TextView textOlvidar;
 
     private FirebaseAuth firebaseAuth;
 
@@ -47,6 +48,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnIniciar = (Button) findViewById(R.id.btn_iniciar);
         btnRegistro = (Button) findViewById(R.id.btn_registrarse);
+
+        textOlvidar = (TextView) findViewById(R.id.txt_olvidar);
+
+        textOlvidar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RescueActivity.class);
+                startActivity(intent);
+
+                Toast.makeText(MainActivity.this, "Recuperación de contraseña.", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         btnIniciar.setOnClickListener(this);
         btnRegistro.setOnClickListener(new View.OnClickListener() {

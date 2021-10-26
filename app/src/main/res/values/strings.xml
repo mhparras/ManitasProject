@@ -43,4 +43,7 @@
     <string name="guardar">Guardar</string>
     <string name="cancelar">Cancelar</string>
 
+    //layout restablecer contraseña
+    <string name="restablecer">Restablecer Contraseña</string>
+
 </resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202732"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    tools:context=".OptionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/log"
+            android:background="@drawable/custom_image_logo"
+            android:contentDescription="@string/txt_title">
+        </ImageView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/custom_activity_menu"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/textNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:text="Ingresa tu correo:"/>
+
+            <EditText
+                android:id="@+id/txt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="@string/correo"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/btn_Restablecer"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="@string/restablecer"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button_rounded" />
+
+            <Button
+                android:id="@+id/btn_cancelar"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded_border"
+                android:text="@string/cancelar"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

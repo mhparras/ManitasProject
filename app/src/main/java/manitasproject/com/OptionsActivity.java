@@ -3,8 +3,8 @@ package manitasproject.com;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -62,11 +62,6 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
 
         traerDatos(miBundle.getString("uid"));
 
-        /**if(miBundle != null){
-            String nombre = miBundle.getString("uid");
-            nombreUsuario.setText(nombre);
-        }**/
-
         btnGuardar.setOnClickListener(this);
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,11 +73,37 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
+        String passActual = contrasenaActual.getText().toString().trim();
+        String passNueva = contrasenaNueva.getText().toString().trim();
+        String passConfNueva = confContrasenaNueva.getText().toString().trim();
+        boolean cambio = true;
 
+        Bundle miBundle = this.getIntent().getExtras();
+
+        if(TextUtils.isEmpty(passActual)) {
+            contrasenaActual.setError("Campo requerido");
+            cambio = false;
+        }
+        if(TextUtils.isEmpty(passNueva)) {
+            contrasenaNueva.setError("Campo requerido");
+            cambio = false;
+        }
+        if(TextUtils.isEmpty(passNueva)) {
+            confContrasenaNueva.setError("Campo requerido");
+            cambio = false;
+        }
+        if(TextUtils.equals(passNueva, passConfNueva) == false) {
+            Toast.makeText(OptionsActivity.this, "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show();
+            cambio = false;
+        }
+
+        if(cambio){
+            cambiarContrasena(miBundle.getString("uid"), passActual, passNueva, passConfNueva);
+        }
     }
 
     private void traerDatos(String id){
-        //final String[] respuesta = {"","","",""};
+
         //Instancia a la base de datos
         FirebaseDatabase fdb = FirebaseDatabase.getInstance();
         //apuntamos al nodo que queremos leer
@@ -102,6 +123,30 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
                             sexoUsuario.setText((String) data.child("sexo").getValue());
                             break;
                         }
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                System.out.println("Fallo la lectura: " + error.getCode());
+            }
+        });
+    }
+
+    private void cambiarContrasena(String id, String passActual, String passNueva, String passConfNueva){
+        //Instancia a la base de datos
+        FirebaseDatabase fdb = FirebaseDatabase.getInstance();
+        //apuntamos al nodo que queremos leer
+        DatabaseReference myRef = fdb.getReference("Usuario");
+
+        myRef.addListenerForSingleValueEvent(new ValueEventListener(){
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot data: snapshot.getChildren()) {
+                    if (data.child("uid").getValue().equals(id)) {
+                        //firebaseAuth.confirmPasswordReset(id, passNueva);
                     }
                 }
             }
