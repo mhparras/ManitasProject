@@ -28,27 +28,20 @@
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.3828125" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.3828125" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_learn.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_menu.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_options.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Michael/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_rescue.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Michael/test/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.2890625" />
         <entry key="..\:/Users/Michael/test/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.2890625" />
         <entry key="..\:/Users/Michael/test/ManitasProject/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/btn_layout_options.xml" value="0.2203125" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.2203125" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.2203125" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_games.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_learn.xml" value="0.18" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_menu.xml" value="0.22" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/activity_options.xml" value="0.11820652173913043" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/meses.xml" value="0.25" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/meses1.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/ManitasProject/app/src/main/res/layout/meses2.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.14447463768115942" />
+        <entry key="app/src/main/res/layout/animales.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/animales2.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/color1.xml" value="0.1852355072463768" />
+        <entry key="app/src/main/res/layout/color2.xml" value="0.2259963768115942" />
+        <entry key="app/src/main/res/layout/color3.xml" value="0.2259963768115942" />
+        <entry key="app/src/main/res/layout/meses1.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/meses2.xml" value="0.2259963768115942" />
       </map>
     </option>
   </component>
