@@ -15,7 +15,7 @@
         android:id="@+id/imageView10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/aniamles" />
+        app:srcCompat="@drawable/animales" />
 
     <ImageView
         android:id="@+id/imageView11"
