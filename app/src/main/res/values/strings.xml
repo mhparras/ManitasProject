@@ -34,6 +34,7 @@
     <string name="verbos">Verbos</string>
     <string name="operaciones">Operaciones Matemáticas</string>
     <string name="volver">Volver</string>
+    <string name="siguiente">Siguiente</string>
 
     //layout opciones
     <string name="cambiarcontrasena">Cambiar Contraseña</string>
