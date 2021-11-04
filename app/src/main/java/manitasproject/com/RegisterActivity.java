@@ -99,6 +99,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     public void nextActivityMain(){
         Intent intent = new Intent(getApplication(), MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     private final Persona validateRegister() throws Exception {
