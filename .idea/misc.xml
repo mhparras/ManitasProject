@@ -3,9 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/btn_layout_options.xml" value="0.2125" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/button_next_activity.xml" value="0.20923076923076922" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.20923076923076922" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/button_rounded_border.xml" value="0.20923076923076922" />
         <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/activity_games.xml" value="0.19635416666666666" />
-        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/activity_learn.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/activity_learn.xml" value="0.25" />
         <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/activity_menu.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/animales.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/animales2.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/color1.xml" value="0.15" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/color2.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/color3.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_animales1.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_animales2.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_colores1.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_colores2.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_colores3.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_meses1.xml" value="0.25" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_meses2.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/fragment_options_learn.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/meses1.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/layout/meses2.xml" value="0.12864583333333332" />
         <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/btn_games_principal.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/btn_options_principal.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/Cosmo/StudioProjects/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.15833333333333333" />

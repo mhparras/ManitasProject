@@ -4,32 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#202732"
     android:orientation="vertical"
-    android:padding="10dp">
+    tools:context=".FragmentAnimales1">
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
         android:padding="10dp">
-        <ImageView
-            android:id="@+id/imageView17"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/colores" />
 
         <ImageView
-            android:id="@+id/imageView14"
             android:layout_width="match_parent"
-            android:layout_height="222dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/blanco" />
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/animales"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/gato" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/leon" />
+
     </LinearLayout>
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,5 +47,6 @@
             android:text="@string/siguiente" />
 
     </LinearLayout>
+
 
 </LinearLayout>
