@@ -3,6 +3,8 @@ package manitasproject.com;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -38,15 +40,20 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
 
     private FirebaseAuth firebaseAuth;
 
+    public void cargarPreferencias(){
+        SharedPreferences preferences = getSharedPreferences("idUsuario", Context.MODE_PRIVATE);
+        idUsuario = preferences.getString("id","nulo");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_options);
 
+        cargarPreferencias();
+
         //Conexión con Firebase
         firebaseAuth = FirebaseAuth.getInstance();
-
-        Bundle miBundle = this.getIntent().getExtras();
 
         nombreUsuario = (TextView) findViewById(R.id.textNombreUsuario);
         correoUsuario = (EditText) findViewById(R.id.textCorreo);
@@ -60,7 +67,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
         btnGuardar = (Button) findViewById(R.id.btn_guardar);
         btnCancelar = (Button) findViewById(R.id.btn_cancelar);
 
-        traerDatos(miBundle.getString("uid"));
+        traerDatos(idUsuario);
 
         btnGuardar.setOnClickListener(this);
         btnCancelar.setOnClickListener(new View.OnClickListener() {
