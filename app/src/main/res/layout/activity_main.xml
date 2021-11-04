@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_iniciar" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/recordarLogin"
         android:layout_width="136dp"
         android:layout_height="48dp"
         android:layout_marginStart="220dp"

@@ -3,12 +3,15 @@ package manitasproject.com;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText textContrasena;
 
     private TextView textOlvidar;
+    private Switch recordarSesion;
 
     private FirebaseAuth firebaseAuth;
 
@@ -40,6 +44,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        recordarSesion = (Switch) findViewById(R.id.recordarLogin);
+
+        if(obtenerEstadoBoton()){
+            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -115,19 +127,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void logeador(final CredencialPersona credencialPersona) {
         firebaseAuth.signInWithEmailAndPassword(credencialPersona.getCorreo(), credencialPersona.getContrasena())
-            .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                    if(task.isSuccessful())
-                        pedirId(credencialPersona.getCorreo());
-                    else{
-                        if(task.getException() instanceof FirebaseAuthUserCollisionException)
-                            Toast.makeText(MainActivity.this, "Correo o contraseña incorrectos.", Toast.LENGTH_SHORT).show();
-                        else
-                            Toast.makeText(MainActivity.this, "Error, no se pudo iniciar la sesión.", Toast.LENGTH_SHORT).show();
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()) {
+                            pedirId(credencialPersona.getCorreo());
+                            guardarEstadoLogin();
+                        }
+                        else{
+                            if(task.getException() instanceof FirebaseAuthUserCollisionException)
+                                Toast.makeText(MainActivity.this, "Correo o contraseña incorrectos.", Toast.LENGTH_SHORT).show();
+                            else
+                                Toast.makeText(MainActivity.this, "Error, no se pudo iniciar la sesión.", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                }
-            });
+                });
     }
 
     private void pedirId(final String correo){
@@ -164,20 +178,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void siguienteActividad(String id){
 
+        SharedPreferences preferences = getSharedPreferences("idUsuario", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("id", id);
+
+        editor.commit();
+
         Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-        intent.putExtra("uid", id);
-
-        //Creamos el trasnporte del id del usuario logeado
-        Bundle miBundle = new Bundle();
-        miBundle.putString("uid", id);
-
-        //Enviamos el elemento a la siguiente actividad
-        intent.putExtras(miBundle);
-
         startActivity(intent);
+        finish();
+    }
 
-        //Limpiamos las cajas de texto después de hacer el loggin
-        textCorreo.setText("");
-        textContrasena.setText("");
+    public void guardarEstadoLogin(){
+        SharedPreferences pref = getSharedPreferences("SESION_BOTON", MODE_PRIVATE);
+        pref.edit().putBoolean("PREFERENCE_ESTADO_BTN_SESION", recordarSesion.isChecked()).apply(); //Guardar estado del boton en la actividad
+    }
+
+    public boolean obtenerEstadoBoton(){
+        SharedPreferences pref = getSharedPreferences("SESION_BOTON", MODE_PRIVATE);
+        return pref.getBoolean("PREFERENCE_ESTADO_BTN_SESION", false); //retornar por defecto el estado en false de sesion iniciada
     }
 }
