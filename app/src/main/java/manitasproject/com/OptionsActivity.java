@@ -100,7 +100,7 @@ public class OptionsActivity extends AppCompatActivity implements View.OnClickLi
             cambio = false;
         }
         if(TextUtils.equals(passNueva, passConfNueva) == false) {
-            Toast.makeText(OptionsActivity.this, "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(OptionsActivity.this, "Las contraseñas no coinciden.", Toast.LENGTH_LONG).show();
             cambio = false;
         }
 

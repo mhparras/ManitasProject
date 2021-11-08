@@ -4,6 +4,8 @@
     <string name="btn_aprendizaje">Aprendizaje</string>
     <string name="btn_juegos">Juegos</string>
     <string name="btn_options">Opciones</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="salir">Salir</string>
 
     //Inicio de sesión
     <string name="registrarse">Registrarse</string>
