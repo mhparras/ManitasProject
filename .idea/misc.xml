@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/drawable/button_next_activity.xml" value="0.2125" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/drawable/button_rounded.xml" value="0.2125" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/drawable/button_rounded_border.xml" value="0.2125" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/activity_animals_learn.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/activity_colors_learn.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/activity_learn.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/activity_menu.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/activity_months.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/fragment_colores1.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/fragment_colores2.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/fragment_colores3.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/fragment_meses1.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/fragment_meses2.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Cosmo/Desktop/manitas2/app/src/main/res/layout/fragment_options_learn.xml" value="0.19635416666666666" />
         <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/btn_layout_options.xml" value="0.2125" />
         <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/button_next_activity.xml" value="0.20923076923076922" />
         <entry key="..\:/Users/Cosmo/Desktop/proyectomanitas/ManitasProject/app/src/main/res/drawable/button_rounded.xml" value="0.20923076923076922" />

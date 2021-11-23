@@ -37,6 +37,10 @@
     <string name="operaciones">Operaciones Matemáticas</string>
     <string name="volver">Volver</string>
     <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
+    <string name="l_1">Lección 1</string>
+    <string name="l_2">Lección 2</string>
+    <string name="l_3">Lección 3</string>
 
     //layout opciones
     <string name="cambiarcontrasena">Cambiar Contraseña</string>

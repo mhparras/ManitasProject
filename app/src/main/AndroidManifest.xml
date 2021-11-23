@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
+            android:name=".MonthsLearnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AbcLearnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AnimalsLearnActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ColorsLearnActivity"
+            android:exported="true" />
+        <activity
             android:name=".RescueActivity"
             android:exported="true" />
         <activity
