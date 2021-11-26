@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MenuActivity"
-    android:background="@color/white"
+    android:background="@color/backgroundManitas"
     android:orientation="vertical"
     android:padding="15dp">
     <LinearLayout
@@ -28,7 +28,22 @@
         </ImageView>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3sp">
 
+        <TextView
+            android:id="@+id/txt_cerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar_sesion"
+            android:textColor="@color/colorB"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
